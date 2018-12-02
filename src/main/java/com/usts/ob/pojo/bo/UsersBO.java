@@ -1,7 +1,8 @@
 package com.usts.ob.pojo.bo;
 
 /**
- * 从前端传到后端
+ * 从前端传到后端  用户输入的数据
+ * 将base64封装
  */
 public class UsersBO {
     private String userId;

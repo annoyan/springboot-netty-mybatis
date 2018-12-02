@@ -1,6 +1,7 @@
 package com.usts.ob.service;
 
-import com.usts.ob.pojo.ChatMsg;
+
+import com.usts.ob.netty.ChatMsg;
 import com.usts.ob.pojo.Users;
 import com.usts.ob.pojo.vo.FriendRequestVO;
 import com.usts.ob.pojo.vo.MyFriendsVO;
@@ -71,7 +72,7 @@ public interface UserService {
     public List<MyFriendsVO> queryMyFriends(String userId);
 
     /**
-     * @Description: 保存聊天消息到数据库
+     * @Description: Netty 保存聊天消息到数据库
      */
     public String saveMsg(ChatMsg chatMsg);
 
@@ -83,7 +84,7 @@ public interface UserService {
     /**
      * @Description: 获取未签收消息列表
      */
-    public List<ChatMsg> getUnReadMsgList(String acceptUserId);
+    public List<com.usts.ob.pojo.ChatMsg> getUnReadMsgList(String acceptUserId);
 
 
 }
